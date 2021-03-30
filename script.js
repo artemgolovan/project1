@@ -45,7 +45,7 @@ const personalMovieDB = {
         start: function() {
             personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
         
-            while (personalMovieDB.count == '' || numberOfFilms == 'null' || isNaN(numberOfFilms)) {
+            while (personalMovieDB.count == '' || personalMovieDB.count == 'null' || isNaN(personalMovieDB.count)) {
                 personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
             }
         },
